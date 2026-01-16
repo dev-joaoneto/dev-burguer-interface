@@ -1,6 +1,8 @@
 # Etapa 1: build
 FROM node:20-alpine AS build
 
+RUN apk update && apk upgrade --no-cache
+
 WORKDIR /app
 
 # Instala dependências
@@ -15,6 +17,8 @@ RUN npm run build
 
 # Etapa 2: outro servidor
 FROM nginx:alpine
+
+RUN apk update && apk upgrade --no-cache
 
 COPY --from=build /app/dist /usr/share/nginx/html
 
