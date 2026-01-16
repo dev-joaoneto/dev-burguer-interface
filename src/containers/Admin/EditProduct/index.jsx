@@ -67,7 +67,6 @@ export function EditProduct() {
     productFormData.append('file', data.file[0]);
     productFormData.append('offer', data.offer);
 
-
     await toast.promise(api.put(`/products/${product.id}`, productFormData), {
       pending: 'Editando produto...',
       success: 'Produto editado com sucesso! 👌',
@@ -83,13 +82,13 @@ export function EditProduct() {
       <Form onSubmit={handleSubmit(onSubmit)}>
         <InputGroup>
           <Label>Nome</Label>
-          <Input type='text' {...register('name')} defaultValue={product.name}/>
+          <Input type='text' {...register('name')} defaultValue={product.name} />
           <ErrorMessage>{errors?.name?.message}</ErrorMessage>
         </InputGroup>
 
         <InputGroup>
           <Label>Preço</Label>
-          <Input type='number' {...register('price')} defaultValue={product.price/100}/>
+          <Input type='number' {...register('price')} defaultValue={product.price / 100} />
           <ErrorMessage>{errors?.price?.message}</ErrorMessage>
         </InputGroup>
 
@@ -133,10 +132,10 @@ export function EditProduct() {
         </InputGroup>
 
         <InputGroup>
-            <ContainerCheckbox>
-              <input type='checkbox' {...register('offer')} defaultChecked={product.offer} />
-              <Label>Produto em oferta?</Label>
-            </ContainerCheckbox>
+          <ContainerCheckbox>
+            <input type='checkbox' {...register('offer')} defaultChecked={product.offer} />
+            <Label>Produto em oferta?</Label>
+          </ContainerCheckbox>
         </InputGroup>
 
         <SubmitButton type='submit'>Editar Produto</SubmitButton>

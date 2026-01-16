@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import ReactSelect from "react-select";
-import { Button } from "../../../components";
+import styled from 'styled-components';
+import ReactSelect from 'react-select';
+import { Button } from '../../../components';
 
-export const  Container = styled.div`
+export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
