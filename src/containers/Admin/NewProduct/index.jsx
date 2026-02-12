@@ -105,7 +105,7 @@ export function NewProduct() {
 
         <InputGroup>
           <Label>Preço</Label>
-          <Input type='number'
+          <Input type='text'
             step="0.01"
             min="0"
             inputMode="decimal"
