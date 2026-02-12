@@ -24,6 +24,12 @@ const schema = yup.object({
   name: yup.string().required('Digite o nome do produto'),
   price: yup
     .number()
+    .transform((value, originalValue) => {
+    if (typeof originalValue === 'string') {
+      return Number(originalValue.replace(',', '.'));
+    }
+    return value;
+    })
     .positive()
     .required('Digite o preço do produto')
     .typeError('Digite o preço do produto'),
@@ -73,7 +79,7 @@ export function NewProduct() {
   const onSubmit = async (data) => {
     const productFormData = new FormData();
     productFormData.append('name', data.name);
-    productFormData.append('price', data.price * 100);
+    productFormData.append('price', Math.round(Number(data.price) * 100);
     productFormData.append('category_id', data.category.id);
     productFormData.append('file', data.file[0]);
     productFormData.append('offer', data.offer);
