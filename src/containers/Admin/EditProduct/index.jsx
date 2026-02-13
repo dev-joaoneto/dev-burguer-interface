@@ -89,9 +89,6 @@ export function EditProduct() {
         <InputGroup>
           <Label>Preço</Label>
           <Input type='text'
-            step="0.01"
-            min="0"
-            inputMode="decimal"
             {...register('price')} defaultValue={product.price / 100} />
           <ErrorMessage>{errors?.price?.message}</ErrorMessage>
         </InputGroup>
