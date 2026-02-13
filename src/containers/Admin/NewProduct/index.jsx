@@ -79,7 +79,7 @@ export function NewProduct() {
   const onSubmit = async (data) => {
     const productFormData = new FormData();
     productFormData.append('name', data.name);
-    productFormData.append('price', data.price * 100);
+    productFormData.append('price', Math.round(Number(data.price) * 100));
     productFormData.append('category_id', data.category.id);
     productFormData.append('file', data.file[0]);
     productFormData.append('offer', data.offer);
@@ -105,8 +105,12 @@ export function NewProduct() {
 
         <InputGroup>
           <Label>Preço</Label>
-          <Input type='text'
-            {...register('price')} />
+           <Input
+              type="text"
+              
+              inputMode="decimal"
+              {...register('price')}
+            />
           <ErrorMessage>{errors?.price?.message}</ErrorMessage>
         </InputGroup>
 
