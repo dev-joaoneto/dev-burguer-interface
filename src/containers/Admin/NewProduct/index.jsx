@@ -105,20 +105,11 @@ export function NewProduct() {
 
         <InputGroup>
           <Label>Preço</Label>
-<<<<<<< HEAD
           <Input type='number'
             step="0.01"
             min="0"
             inputMode="decimal"
             {...register('price')} />
-=======
-           <Input
-              type="text"
-              
-              inputMode="decimal"
-              {...register('price')}
-            />
->>>>>>> 58c4faad2e7c43ecc106bd083401a3cd969e0e8d
           <ErrorMessage>{errors?.price?.message}</ErrorMessage>
         </InputGroup>
 
