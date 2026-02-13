@@ -1,5 +1,5 @@
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromisse = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY)
+const stripePromisse = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY)
 
 export default stripePromisse
