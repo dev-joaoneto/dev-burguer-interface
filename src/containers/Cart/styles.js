@@ -64,4 +64,8 @@ export const Content = styled.div`
     margin: 0 auto;
     gap: 20px;
     padding: 20px 40px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 `;

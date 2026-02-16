@@ -9,21 +9,21 @@ export function Menu() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  
+
   const navigate = useNavigate();
   const { search } = useLocation();
-  const queryParams= new URLSearchParams(search);
-  
+  const queryParams = new URLSearchParams(search);
+
   const [activeCategory, setActiveCategory] = useState(() => {
     const categoryId = +queryParams.get('category');
 
-      if (categoryId) {
-        return categoryId;
-      }
-      return 0
+    if (categoryId) {
+      return categoryId;
+    }
+    return 0
   }
   );
-  
+
 
   useEffect(() => {
     async function loadCategories() {
@@ -71,8 +71,9 @@ export function Menu() {
         </h1>
       </Banner>
       <HomeButton to={`/`}>
-          ↩ <p>Voltar</p>
+        ↩ <p>Voltar</p>
       </HomeButton>
+
       <CategoryMenu>
         {categories.map((category) => (
           <CategoryButton

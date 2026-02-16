@@ -13,4 +13,10 @@ export const Container = styled.div`
         font-size: 16px;
         font-weight: lighter;
     }
+
+    @media (max-width: 768px) {
+        p {
+            font-size: 12px;
+        }
+    }
 `;

@@ -52,6 +52,11 @@ export const CategoryMenu = styled.div`
     justify-content: center;
     gap: 50px;
     margin-top: 30px; 
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const HomeButton = styled(Link)`
@@ -104,5 +109,18 @@ export const ProductsContainer = styled.div`
     justify-content: center;
     max-width: 1280px;
     margin: 50px auto 0;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
 `;
+
+
+
+
+
 

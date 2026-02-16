@@ -29,12 +29,12 @@ export function CartItems() {
         {cartProducts?.length ? (
           cartProducts.map((product) => (
             <Table.Tr key={product.id}>
-              <Table.Td>
+              <Table.Td data-label='Produto'>
                 <ProductImage src={product.url} alt={product.name} />
               </Table.Td>
-              <Table.Td>{product.name}</Table.Td>
-              <Table.Td>{product.currencyValue}</Table.Td>
-              <Table.Td>
+              <Table.Td data-label='item'>{product.name}</Table.Td>
+              <Table.Td data-label='Preço'>{product.currencyValue}</Table.Td>
+              <Table.Td data-label='Quantidade'>
                 <ButtonGroup>
                   <button type='button' onClick={() => decreaseProduct(product.id)}>
                     -
@@ -45,10 +45,10 @@ export function CartItems() {
                   </button>
                 </ButtonGroup>
               </Table.Td>
-              <Table.Td>
+              <Table.Td data-label='Total'>
                 <TotalPrice>{formatPrice(product.price * product.quantity)}</TotalPrice>
               </Table.Td>
-              <Table.Td>
+              <Table.Td data-label='Remover'>
                 <TrashImage
                   src={TrashIcon}
                   alt='Remover produto'

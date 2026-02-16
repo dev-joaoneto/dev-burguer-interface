@@ -11,11 +11,18 @@
 
 .container {
   display: flex;
+  flex-direction: column;
+
+  min-height: 80vh;
+  width: 100%;
+  margin-bottom: 27px;
+
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 80vh;
-  width: 100vw;
+
+  @media (max-width: 768px) {
+    margin-bottom: 65px;
+  }
 }
 
 #payment-form {
@@ -28,6 +35,11 @@
   padding: 40px;
   margin-top: auto;
   margin-bottom: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: 300px;
+  }
 }
 
 

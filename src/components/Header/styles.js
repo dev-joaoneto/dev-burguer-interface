@@ -7,6 +7,14 @@ export const Container = styled.div`
     width: 100%;
     height: 72px;
     padding: 0 56px;
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 420px) {
+        padding: 0 10px;
+    }
 `
 
 export const Content = styled.div`
@@ -60,6 +68,14 @@ export const Options = styled.div`
     justify-content: center;
     align-items: center;
     gap: 48px;
+
+    @media (max-width: 768px) {
+        gap: 15px;
+    }
+
+    @media (max-width: 420px) {
+        gap: 10px;
+    }
 `;
 
 export const Profile = styled.div`
@@ -77,6 +93,11 @@ export const Profile = styled.div`
             font-weight: 700;
             color: #9758a6;
         }
+    }
+
+    @media (max-width: 420px) {
+        gap: 5px;
+        margin-left: 20px;
     }
 `;
 
