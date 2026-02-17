@@ -1,16 +1,40 @@
-# React + Vite
+# 🍔 Dev Burguer – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend da aplicação **Dev & Grill**, desenvolvido como uma **SPA (Single Page Application)** moderna, responsiva e integrada a uma API REST.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+- **React**
+- **Vite**
+- **React Router DOM**
+- **Styled-components**
+- **Axios**
+- **Stripe JS**
+- **Docker**
+- **Nginx**
+- **EasyPanel**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📱 Responsividade
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Layout adaptado para desktop e mobile
+- Menu hamburger no mobile
+- Componentes reutilizáveis
+- Estilização dinâmica com styled-components
+
+---
+
+## 🌐 Integração com API
+
+A aplicação consome a API do backend para:
+
+- Autenticação de usuários
+- Listagem de categorias e produtos
+- Carrinho de compras
+- Criação de pedidos
+- Pagamento via Stripe
+
+---
