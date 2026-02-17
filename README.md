@@ -1,40 +1,87 @@
-# 🍔 Dev & Grill – Frontend
+🍔 Dev & Grill – Frontend
 
-Frontend da aplicação **Dev & Grill**, desenvolvido como uma **SPA (Single Page Application)** moderna, responsiva e integrada a uma API REST.
+SPA moderna e responsiva para e-commerce
 
----
+📌 Visão Geral
 
-## 🚀 Tecnologias Utilizadas
+O Dev & Grill Frontend é uma Single Page Application (SPA) desenvolvida com React, focada em experiência do usuário, performance e integração com pagamentos online.
 
-- **React**
-- **Vite**
-- **React Router DOM**
-- **Styled-components**
-- **Axios**
-- **Stripe JS**
-- **Docker**
-- **Nginx**
-- **EasyPanel**
+A aplicação consome uma API REST própria e foi projetada para funcionar corretamente em ambiente de produção, incluindo fallback de rotas e build otimizado.
 
----
+🎨 Experiência do Usuário
 
-## 📱 Responsividade
+- Layout moderno e intuitivo
 
-- Layout adaptado para desktop e mobile
+- Responsividade total (desktop e mobile)
+
 - Menu hamburger no mobile
-- Componentes reutilizáveis
-- Estilização dinâmica com styled-components
 
----
+- Feedback visual com Toasts
 
-## 🌐 Integração com API
+- Checkout integrado ao Stripe
 
-A aplicação consome a API do backend para:
+🧠 Decisões Técnicas
 
-- Autenticação de usuários
-- Listagem de categorias e produtos
+- Vite para build rápido e otimizado
+
+- Styled-components para estilos escaláveis
+
+- React Router DOM com suporte a SPA
+
+- Axios para comunicação com a API
+
+- Stripe Elements para pagamentos seguros
+
+- Nginx configurado para SPA fallback
+
+🛠️ Stack Tecnológica
+
+- React
+
+- Vite
+
+- Styled-components
+
+- React Router DOM
+
+- Axios
+
+- Stripe JS
+
+- Docker
+
+- Nginx
+
+- EasyPanel
+
+🏗️ Build & Produção
+
+- Build otimizado
+
+- Servido via Nginx
+
+- onfiguração para evitar erro 404 em reload (SPA)
+
+🐳 Docker & Deploy
+
+- Multi-stage build
+
+- Build em Node
+
+- Runtime em Nginx
+
+- Deploy em VPS usando EasyPanel
+
+🛒 Funcionalidades
+
+- Autenticação
+
+- Listagem de categorias
+
+- Filtro de produtos
+
 - Carrinho de compras
-- Criação de pedidos
-- Pagamento via Stripe
 
----
+- Checkout com Stripe
+
+- Confirmação de pagamento
