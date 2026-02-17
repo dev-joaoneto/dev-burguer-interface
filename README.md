@@ -1,4 +1,4 @@
-# 🍔 Dev Burguer – Frontend
+# 🍔 Dev & Grill – Frontend
 
 Frontend da aplicação **Dev & Grill**, desenvolvido como uma **SPA (Single Page Application)** moderna, responsiva e integrada a uma API REST.
 
