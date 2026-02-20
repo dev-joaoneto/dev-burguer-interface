@@ -8,6 +8,8 @@ O Dev & Grill Frontend é uma Single Page Application (SPA) desenvolvida com Rea
 
 A aplicação consome uma API REST própria e foi projetada para funcionar corretamente em ambiente de produção, incluindo fallback de rotas e build otimizado.
 
+
+
 🎨 Experiência do Usuário
 
 - Layout moderno e intuitivo
@@ -19,6 +21,8 @@ A aplicação consome uma API REST própria e foi projetada para funcionar corre
 - Feedback visual com Toasts
 
 - Checkout integrado ao Stripe
+
+
 
 🧠 Decisões Técnicas
 
@@ -33,6 +37,8 @@ A aplicação consome uma API REST própria e foi projetada para funcionar corre
 - Stripe Elements para pagamentos seguros
 
 - Nginx configurado para SPA fallback
+
+
 
 🛠️ Stack Tecnológica
 
@@ -54,6 +60,8 @@ A aplicação consome uma API REST própria e foi projetada para funcionar corre
 
 - EasyPanel
 
+
+
 🏗️ Build & Produção
 
 - Build otimizado
@@ -61,6 +69,8 @@ A aplicação consome uma API REST própria e foi projetada para funcionar corre
 - Servido via Nginx
 
 - onfiguração para evitar erro 404 em reload (SPA)
+
+
 
 🐳 Docker & Deploy
 
@@ -71,6 +81,8 @@ A aplicação consome uma API REST própria e foi projetada para funcionar corre
 - Runtime em Nginx
 
 - Deploy em VPS usando EasyPanel
+
+
 
 🛒 Funcionalidades
 
